@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Speed your typing up!!</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/words-styles.css" />
+    <script src="../js/words-script.js"></script>
+  </head>
+
+  <body class="bg-dark text-center text-white m-0 p-0">
+    <div id="popUp"></div>
+    <div id="popBox">
+      Game Over!!!<br /><span id="beforeEnd">Your score is: </span>
+      word(s).<br />
+      <a href="../Home.html">
+        <button id="back-home" class="btn btn-primary mt-4">
+          Back Home
+        </button>
+      </a>
+      <button id="tryAgain" class="btn btn-primary mt-4">Try Again</button>
+    </div>
+
+    <header class="bg-secondary p-3">
+      <a href="../Home.html">
+        <img
+          src="../imgs/BackArrow.ico"
+          alt="arrow"
+          title="Back Home"
+          id="backArrow"
+        />
+      </a>
+      <h1>Learn to type properly</h1>
+    </header>
+
+    <main>
+      <div class="container mt-5 mb-5 p-5">
+        <p>Type the given word within 5 seconds</p>
+        <p class="h2" id="currentWord">Hello</p>
+
+        <input
+          id="typedWord"
+          class="input-group-text form-control-plaintext text-left mt-4"
+          type="text"
+          placeholder="Type to start..."
+          autofocus
+        />
+
+        <br />
+
+        <div class="center m-5 pl-5 pr-5">
+          <div>
+            <p>Background Music</p>
+            <input type="checkbox" id="checkBox" />
+          </div>
+
+          <div id="timerDiv" class="mt-3">
+            Time: <span id="time">05,00</span> Score: <span id="score">0</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

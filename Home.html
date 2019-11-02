@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Typing Game!!!</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/home-styles.css" />
+  </head>
+  <body class="bg-dark text-center text-white">
+    <header class="bg-secondary p-3">
+      <h1>1MAC Typing Games</h1>
+    </header>
+
+    <main>
+      <div class="container" id="vidContainer">
+        <video src="videos/keyboard.webm" type="video/webm" autoplay muted loop>
+          Check your Internet connection Or change your browser please!!
+        </video>
+
+        <div class="bg-dark text-white p-3 " id="btnDiv">
+          Choose which game you want to play!!
+          <a href="games/wordsGame.html">
+            <button id="wordsBtn" class="btn btn-primary">Words Game</button>
+          </a>
+          <a href="games/textGame.html">
+            <button id="textBtn" class="btn btn-primary">
+              Text Game
+            </button>
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

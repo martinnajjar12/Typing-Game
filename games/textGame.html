@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Typing Game!!!</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/text-styles.css" />
+    <script src="../js/text-script.js"></script>
+  </head>
+  
+  <body class="bg-dark text-center text-white m-0 p-0">
+      <div id="popUp"></div>
+      <div id="popBox">
+        Congratulations!!!<br><span id="afterEnd">You've did it with </span>.<br>
+        <a href="../Home.html">
+              <button id="back-home" class="btn btn-primary mt-4">
+                Back Home
+              </button>
+            </a>
+            <button id="tryAgain" class="btn btn-primary mt-4">Try Again</button>
+      </div>
+
+    <header class="bg-secondary p-3">
+      <a href="../Home.html">
+        <img src="../imgs/BackArrow.ico" alt="arrow" title="Back Home"id="backArrow" />
+      </a>
+      <h1>Learn to type properly</h1>
+    </header>
+
+    <main>
+        <div class="container">
+          <img src="../imgs/parag.png" id="textPic">
+          <p class="h2" id="currentText">We as students here in 1MAC Community, we want to thank Sheikh Mohammed Bin Zayed for this initial and also thank Udacity and the people who are responsible on this partnership, and finally the tutors here in the community who are very patients and kind. We are learning alot of stuffs here and gaining alot of knowledge when we are competing every month. To be honest for me, I do not want to leave this community never, even when the initial is over and closed, I want to be all in touch so we can share our experiences and inquiries together.</p>
+          <textarea
+          id="typedWord"
+          class="input-group-text form-control-plaintext text-left"
+          type="text"
+          placeholder="Start typing...."
+          autofocus
+          /></textarea>
+          <br />
+
+          <div class="center mt-5 mb-5">
+            <div>
+              <p>Background Music</p>
+              <input type="checkbox" id="checkBox">
+            </div>
+            
+            <div id="timerDiv">00:00,00</div>
+            <button id="myBtn" class="btn btn-danger">Reset</button>
+          </div>
+
+        </div>
+    </main>
+  </body>
+</html>
