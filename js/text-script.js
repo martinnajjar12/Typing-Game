@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const typedWord = document.getElementById("typedWord");
   const currentText = document.getElementById("currentText");
   const timerDiv = document.getElementById("timerDiv");
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
       m = 00;
     var timer;
 
-    this.run = function() {
+    this.run = function () {
       if (timer == null) {
         timer = setInterval(start, 10);
       }
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
         (mS < 10 ? "0" + mS : mS);
     }
 
-    this.stop = function() {
+    this.stop = function () {
       var uiTime =
         (m < 10 ? "0" + m : m) +
         ":" +
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
       bgMusic.stopBgMusic();
     };
 
-    this.reset = function() {
+    this.reset = function () {
       clearInterval(timer);
       timer = null;
       m = 0;
@@ -97,11 +97,11 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function toggleBgMusic() {
-    this.stopBgMusic = function() {
+    this.stopBgMusic = function () {
       bgAudio.pause();
       bgAudio.currentTime = 0;
     };
-    this.playBgMusic = function() {
+    this.playBgMusic = function () {
       bgAudio.play();
       bgAudio.loop = true;
     };
