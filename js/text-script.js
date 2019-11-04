@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const typedWord = document.getElementById("typedWord");
   const currentText = document.getElementById("currentText");
   const timerDiv = document.getElementById("timerDiv");
-  const startButton = document.getElementById("myBtn");
+  const resetButton = document.getElementById("myBtn");
   const tryAgain = document.getElementById("tryAgain");
   const span = document.getElementById("afterEnd");
   const checkBox = document.getElementById("checkBox");
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.addEventListener("keyup", check);
   document.addEventListener("keypress", watch.run);
-  startButton.addEventListener("click", watch.reset);
+  resetButton.addEventListener("click", watch.reset);
   tryAgain.addEventListener("click", watch.reset);
   checkBox.addEventListener("click", startMusic);
 });
